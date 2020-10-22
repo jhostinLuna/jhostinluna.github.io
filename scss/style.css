@@ -1,0 +1,41 @@
+.presentacion {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  margin: 0 auto 70px auto;
+}
+
+.presentacion:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("../assets/images/computer.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+  opacity: 0.4;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+}
+
+#text-presentacion {
+  font-size: xx-large;
+  position: relative;
+  margin: auto;
+}
+
+#footer {
+  text-decoration: none;
+  width: 100%;
+  border-top: 2px #007bff solid;
+}
+
+i {
+  font-size: 60px;
+}
+
+header {
+  font-family: 'Dancing Script', cursive;
+}
+/*# sourceMappingURL=style.css.map */

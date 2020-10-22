@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Presentación ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhostinLuna/jhostinluna.github.io.git"
+  },
+  "author": "Jhostin Luna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhostinLuna/jhostinluna/issues"
+  },
+  "homepage": "https://github.com/jhostinLuna/jhostinluna#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}

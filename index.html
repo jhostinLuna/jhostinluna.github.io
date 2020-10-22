@@ -1,26 +1,43 @@
-<html>
-<head>
-<title>
-Prueba index en github
+---
 
-</title>
+layout: default
+title: Home
 
+---
+{{ page.path }}
+<main>  
+    <!--tarjeta presentación-->
+    
+    <div class="presentacion d-flex align-items-center">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="col-sm-12 col-lg-6 col-xl-6 m-auto">
+            <img src="assets/images/jhos-w.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-sm-12 col-lg-6 col-xl-6">
+            <div id="text-presentacion" class="container-fluid text-sm-center text-lg-left">
+              <h2>¡Hola! Mi nombre es Jhostin</h2>
+              <h2>Soy Desarrolador de aplicaciones Web</h2>
+              <h2>Cuenta conmigo para trabajar juntos. </h2>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <h3 class="text-center my-5" >¿QUE PUEDO APORTAR A TU EMPRESA?</h3>
+    
+    <div id="motivos" class="container-fluid">
+      <div class="row">
 
-</head>
-
-<body>
-
-<h1>HOLA MUNDO</h1>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150555065-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-150555065-1');
-</script>
-
-</body>
-</html>
+      </div>
+      {% for item in site.data.motivos %}
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4" style="text-align: center;">{{item.header}}</h1>
+          <p class="lead" style="text-align: center;">{{item.cuerpo}}</p>
+        </div>
+      </div>
+          
+      {% endfor %}
+    </div>
+    
+</main>

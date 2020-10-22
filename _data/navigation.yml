@@ -1,0 +1,11 @@
+- name: Inicio
+  link: /
+
+- name: Sobre mi
+  link: /proyectos.html
+
+- name: Contacto
+  link: /contacto.html
+
+
+  
